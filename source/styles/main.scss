@@ -1,9 +1,53 @@
+* {
+box-sizing: border-box;  
+}
 
-//write here your scss styles
-body {
-    background-color: 'red';
-  }
+.welcome-project {
+  background-color:red;
+  margin:0;
+  padding:0;
+}
 
-h1 {
-    color: aqua;
+.welcome-container {
+  width:80%;
+  margin:0 auto;
+}
+
+.welcome-startup {
+  color:#ffffff;
+  font-size:32px;
+  display: flex;
+  padding-right: 510px;
+}
+
+.welcome-submenu {
+  display: flex;
+  width: 540px;
+  justify-content: space-between;
+  color: #ffffff;
+  font: size 14px;
+}
+
+.welcome-general-block {
+  color: #ffffff;
+}
+
+.welcome-title {
+  font-size: 48px;
+}
+.welcome-text {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.welcome-button {
+  height:50px;
+  width:180px;
+  border:2px solid #ffffff;
+}
+
+.welcome-button-text {
+  font-size: 16px;
+  color:#ffffff;
+  margin:(19px 34px 18px 35px);
 }
