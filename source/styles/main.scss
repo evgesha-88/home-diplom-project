@@ -3,9 +3,11 @@ box-sizing: border-box;
 }
 
 .welcome-project {
-  background-color:red;
+  /*background-color: brown;*/
   margin:0;
   padding:0;
+  background-image: url("../img/Home_Background.png");
+  background-repeat: no-repeat;
 }
 
 .welcome-container {
@@ -18,6 +20,7 @@ box-sizing: border-box;
   font-size:32px;
   display: flex;
   padding-right: 510px;
+  padding-top: 40px;
 }
 
 .welcome-submenu {
@@ -25,16 +28,20 @@ box-sizing: border-box;
   width: 540px;
   justify-content: space-between;
   color: #ffffff;
-  font: size 14px;
+  font-size: 14px;
+  padding-top: 40px;
 }
 
 .welcome-general-block {
   color: #ffffff;
+  padding: 264px 260px;
+  text-align: center;
 }
 
 .welcome-title {
   font-size: 48px;
 }
+
 .welcome-text {
   font-size: 20px;
   padding-bottom: 50px;
@@ -44,10 +51,45 @@ box-sizing: border-box;
   height:50px;
   width:180px;
   border:2px solid #ffffff;
+  
 }
 
 .welcome-button-text {
   font-size: 16px;
   color:#ffffff;
   margin:(19px 34px 18px 35px);
+}
+
+.service-project {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.service-project-container {
+  width: 80%;
+  margin: 0 auto
+}
+
+.service-project-content {
+    text-align: center;
+}
+
+.service-title {
+  color: #555555;
+  font-size: 20px;
+  padding-bottom: 29px;
+}
+
+.service-line {
+  width: 50px;
+  height: 2px;
+  color:#555555;
+  padding-bottom: 28px;
+}
+
+.service-text {
+  color: #555555;
+  font-size: 16px;
+  padding-bottom: 70px; 
 }
