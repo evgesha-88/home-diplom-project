@@ -90,7 +90,7 @@ box-sizing: border-box;
 .service-line {
   width: 50px;
   height: 2px;
-  color:#555555;
+  background-color:#555555;
   padding-bottom: 28px;
 }
 
@@ -126,12 +126,13 @@ box-sizing: border-box;
 }
 
 .fon {
-  position: absolute;
+  position: relative;
 }
 
 .code {
-  position: relative;
-  left: -20px;
+  position: absolute;
+  left:20px;
+  top: 30px;
 }
 
 .service-icons-arrows-title {
@@ -155,3 +156,94 @@ box-sizing: border-box;
   color:#555555;
   font-size: 14px;
 }
+
+.about-us {
+  background-color:#f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-us-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 93px;
+  padding-bottom: 70px;
+}
+
+.about-us-title {
+  color: #555555;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.about-us-line {
+  width: 50px;
+  height: 2px;
+  background-color: #555555;
+}
+
+.about-us-text {
+  color: #555555;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: row;
+  color: #555555;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 71px;
+}
+
+.about-us-content-text1 {
+  padding-right: 32px;
+}
+
+.about-us-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-between;
+  padding-bottom: 99px;
+}
+
+.about-us-Uddin {
+  background-image: url("../img/Uddin.png");
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+}
+
+.about-us-Miah {
+  background-image: url("../img/Miah.png");
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+}
+
+.about-us-Mia {
+  background-image: url("../img/Mia.png");
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat; 
+}
+
+.about-us-Doe {
+  background-image: url("../img/Doe.png");
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+}
+
+
+
