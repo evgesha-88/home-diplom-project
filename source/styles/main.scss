@@ -108,14 +108,25 @@ body {
 
 .service-icons {
   display: flex;
+  justify-content: space-between;
 
 }
 
-.service-item {
+.service-icons-circle {
   display: flex;
   flex-direction: column;
   height: 217px;
   align-items: center;
+}
+
+.circle {
+  position: relative;
+}
+
+.later {
+  position: absolute;
+  left:20px;
+  top:20px;
 }
 
 .service-icons-circle-title {
@@ -129,11 +140,12 @@ body {
   font-size: 14px;
 }
 
-.service-icons-arrow-picture {
+.service-icons-arrows {
   display: flex;
+  flex-direction: column;
+  height: 217px;
   align-items: center;
-  justify-content: center;
-}
+} 
 
 .service-icons-arrows-title {
   color:#555555;
@@ -144,6 +156,13 @@ body {
 .service-icons-arrows-text {
   color:#555555;
   font-size: 14px;
+}
+
+.service-icons-ring {
+  display: flex;
+  flex-direction: column;
+  height: 217px;
+  align-items: center;
 }
 
 .service-icons-ring-title {
