@@ -2,16 +2,19 @@
 box-sizing: border-box;  
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .welcome-project {
-  /*background-color: brown;*/
-  margin:0;
-  padding:0;
   background-image: url("../img/Home_Background.png");
   background-repeat: no-repeat;
+  padding-bottom: 440px;
 }
 
 .welcome-container {
-  width:90%;
+  width:85%;
   margin:0 auto;
 }
 
@@ -38,9 +41,12 @@ box-sizing: border-box;
 }
 
 .welcome-general-block {
+  display: flex;
+  height: 187px;
+  flex-direction: column;
+  align-items: center;
   color: #ffffff;
-  padding: 264px 260px;
-  text-align: center;
+  padding-top: 264px;
 }
 
 .welcome-title {
@@ -67,12 +73,11 @@ box-sizing: border-box;
 
 .service-project {
   background-color: #ffffff;
-  padding: 0;
-  margin: 0;
+ padding:(99px 0 100px 0);
 }
 
 .service-project-container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto
 }
 
@@ -103,16 +108,14 @@ box-sizing: border-box;
 
 .service-icons {
   display: flex;
-  /*justify-content: space-between;*/
-  padding-bottom: 100px;
+
 }
 
 .service-item {
   display: flex;
   flex-direction: column;
-  /*justify-content: center;
+  height: 217px;
   align-items: center;
-  text-align: center;*/
 }
 
 .service-icons-circle-title {
@@ -126,14 +129,10 @@ box-sizing: border-box;
   font-size: 14px;
 }
 
-.fon {
-  position: relative;
-}
-
-.code {
-  position: absolute;
-  left:20px;
-  top: 30px;
+.service-icons-arrow-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-icons-arrows-title {
@@ -160,12 +159,11 @@ box-sizing: border-box;
 
 .about-us {
   background-color:#f8f8f8;
-  margin: 0;
-  padding: 0;
+  padding: (99px 0 99px 0);
 }
 
 .about-us-container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -209,20 +207,16 @@ box-sizing: border-box;
 
 .about-us-gallery {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;;
-  width: 1140px;
-  margin-bottom: 99px;
 }
 
 .about-us-Uddin {
-  height: 250px;
-  width: 260px;
-  background-repeat: no-repeat;
   text-align: center;
   font-size: 14px;
   color: #555555; 
+  padding-right: 29px;
 }
 
 .Uddin-name {
@@ -231,12 +225,10 @@ box-sizing: border-box;
 }
 
 .about-us-Miah {
-  height: 250px;
-  width: 260px;
-  background-repeat: no-repeat;
   text-align: center;
   font-size: 14px;
   color: #555555;
+  padding-right: 29px;
 }
 
 .Miah-name {
@@ -245,12 +237,10 @@ box-sizing: border-box;
 }
 
 .about-us-Mia {
-  height: 250px;
-  width: 260px;
-  background-repeat: no-repeat;
   text-align: center;
   font-size: 14px;
-  color: #555555; 
+  color: #555555;
+  padding-right: 29px; 
 }
 
 .Mia-name {
@@ -259,9 +249,6 @@ box-sizing: border-box;
 }
 
 .about-us-Doe {
-  height: 250px;
-  width: 260px;
-  background-repeat: no-repeat;
   text-align: center;
   font-size: 14px;
   color: #555555;
@@ -274,13 +261,13 @@ box-sizing: border-box;
 
 .latest-works {
   background-color: #ffffff;
-  margin: 0 auto;
+  padding: (99px 0 100px 0);
 }
 
 .latest-works-container {
-  width: 90%;
-  padding: 0;
-  margin:0;
+  width: 85%;
+  margin: 0 auto;
+ 
 }
 
 .latest-works-menu {
