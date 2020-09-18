@@ -321,6 +321,93 @@ body {
   color: #555555;
 }
 
+.latest-foto-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:start;
+}
+
+.foto-hair-dresser {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/hair-dresser.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-dove {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/dove.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-laptop {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/laptop.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-camera {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/camera.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-bycicle {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/bycicle.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-notebook {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/notebook.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-desktop {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/desktop.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-stationary {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/stationary.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.foto-guide {
+  height: 320px;
+  width: 25%;
+  background-image: url("../img/guide.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
 
 
 
