@@ -125,24 +125,19 @@ body {
 }
 
 .service-circle-picture {
-  display: flex;
   padding-bottom: 29px;
-  align-items: center;
-  justify-content: center;
 }
 
 .circle-picture {
+  display: flex;
   width: 90px;
   height: 90px;
   border: 2px solid #dddddd;
   background-color: #c0301c;
   border-radius: 50%;
-  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
 }
-
-/*.later-class {
-  padding-left: 20px;
-}*/
 
 .service-icons-circle-title {
   color:#555555;
@@ -166,18 +161,18 @@ body {
 }
 
 .service-arrows-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 29px;
+    padding-bottom: 29px;
 }
 
 .white-circle-picture {
-width: 90px;
-height: 90px;
-border: 2px solid #dddddd;
-background-color: #ffffff;
-border-radius: 50%;
+  display: flex;  
+  width: 90px;
+  height: 90px;
+  border: 2px solid #dddddd;
+  background-color: #ffffff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -202,9 +197,6 @@ border-radius: 50%;
 }
 
 .service-ring-picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-bottom: 29px;
 }
 
@@ -283,30 +275,32 @@ border-radius: 50%;
 }
 
 .Uddin-foto {
-  display: flex;
-  flex-direction: column;
   background-image: url("../img/Uddin.png");
   width: 263px;
   height: 250px;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+  position: relative;
 }
 
-.Uddin-foto:hover {
+.Uddin-foto:hover .Uddin-icons {
   box-shadow: inset 0 0 0 1000px rgba($color: #555555, $alpha: 0.5);
+  opacity:1;
 }
 
 .Uddin-icons {
   display: flex;
-  width:112px;
+  width:100%;
+  height: 100%;
   justify-content: space-between;
   padding-bottom: 32px;
   align-content: center;
   opacity: 0;
+  position: relative;
 }
 
-.Uddin-icons:hover {
-  opacity: 1;
-}
 
 .Uddin-icons-facebook {
   background-image: url("../img/Facebook_Logo.png");
@@ -333,13 +327,16 @@ border-radius: 50%;
 }
 
 .Uddin-angle-left {
-  display: flex;
+  background-color:#555555;
+  opacity: 0.2;
   width: 35px;
-  height: 250px;
-  flex-direction: column;
+  height: 38px;
+  display: flex;
   justify-content: center;
-  background-image: url("../img/fa-angle-left.png");
-  background-repeat: no-repeat;  
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 106px;
 }
 
 .Uddin-name {
@@ -425,6 +422,11 @@ border-radius: 50%;
   color: #555555;
 }
 
+.latest-works-item1 {
+  font-size: 16px;
+  color: #c0301c;
+}
+
 .latest-foto-block {
   display: grid;
   grid-template-columns: 360px 360px 360px;
@@ -434,11 +436,54 @@ border-radius: 50%;
 }
 
 .foto-hair-dresser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("../img/hair-dresser.png");
   grid-column-start: 1; 
   grid-column-end: 2; 
   grid-row-start: 1; 
   grid-row-end: 2; 
+}
+
+.hair-dresser-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.hair-dresser-title {
+  color: #ffffff;
+  font-size: 18px;
+  padding-bottom: 16px;
+}
+
+.foto-branding {
+  color: #ffffff;
+  font-size: 12px;
+  padding-bottom: 25px;
+}
+
+.foto-button {
+  background-color: #ffffff;
+  width: 100px;
+  height: 38px;
+  padding:(15px 29px 15px 30px);
+}
+
+.button-text {
+  color: #c0301c;
+  font-size: 14px;
+}
+
+.foto-hair-dresser:hover .hair-dresser-content {
+  box-shadow: inset 0 0 0 1000px rgba($color: #c0301c, $alpha: 0.5);
+  opacity: 1;
 }
 
 .foto-dove {
