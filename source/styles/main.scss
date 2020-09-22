@@ -339,10 +339,6 @@ body {
   bottom: 106px;
 }
 
-.Uddin-angle-left:hover {
-  opacity:1
-}
-
 .Uddin-name {
   padding-top: 20px;
   padding-bottom: 15px;
@@ -639,6 +635,130 @@ body {
   background-color:#ffffff;
   color: #c0301c;
 }
+
+.blog-posts {
+  background-color: #ffffff;
+  padding: (95px 0 101px 0);
+}
+
+.blog-posts-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.blog-posts-menu {
+  display: flex;
+  height: 92px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 69px;
+}
+
+.blog-posts-title {
+  color: #555555;
+  font-size: 20px;
+}
+
+.blog-posts-line {
+  width: 50px;
+  height: 2px;
+  background-color: #555555;
+}
+
+.blog-posts-text {
+  color: #555555;
+  font-size: 16px;
+}
+
+.blog-posts-layout {
+  display: flex;
+}
+
+.blog-posts-picture {
+  background-image:url("../img/work_place.png");
+  width: 460px;
+  height: 322px;
+  margin-right: 41px;
+}
+
+.blog-posts-content {
+  display: flex;
+  flex-direction: column;;
+}
+
+.blog-posts-data-block {
+  display: flex;
+  padding-bottom: 23px;
+}
+
+.blog-posts-data-icons {
+  width: 76px;
+  height: 76px;
+  border: 2px solid #555555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 28px;
+}
+
+.blog-posts-data-number {
+  color: #777777;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2.4px;
+}
+
+.blog-posts-data-month {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+}
+
+.blog-posts-data-content {
+  display: flex;
+  flex-direction: column;
+  height: 76px;
+  justify-content: center;
+}
+
+.blog-posts-data-tagline {
+  color: #c0301c;
+  font-size: 16px;
+  padding-bottom: 19px;
+}
+
+.blog-posts-data-signature {
+  color: #c0301c;
+  font-size: 13px;
+}
+
+.blog-posts-text-block {
+  display: flex;
+  flex-direction: column;
+  width: 637px;
+  align-items: baseline;
+}
+
+.blog-posts-text {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 34px;
+}
+
+.blog-posts-link {
+  color: #c0301c;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 
 
 
