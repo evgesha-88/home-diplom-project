@@ -60,25 +60,42 @@ html(lang="en")
                    .about-us-Uddin 
                         .Uddin-foto
                             .Uddin-angle-left
-                                 img(src="../img/fa-angle-left.png", alt="") 
-                            .Uddin-icons
-                                .Uddin-icons-facebook
-                                .Uddin-icons-twitter
-                                .Uddin-icons-google
-                                .Uddin-icons-linkedin
+                                img(src="../img/fa-angle-left.png", alt="") 
+                            .about-us-icons
+                                .about-icon-facebook
+                                .about-icon-twitter
+                                .about-icon-google
+                                .about-icon-linkedin
                         .Uddin-name MD. KHALIL UDDIN
                         .Uddin-profession Head of Idea                                          
                    .about-us-Miah
-                        img(src="../img/Miah.png", width:263px; height:250px; alt="")
+                        .Miah-foto
+                            .about-us-icons
+                                .about-icon-facebook
+                                .about-icon-twitter
+                                .about-icon-google
+                                .about-icon-linkedin
                         .Miah-name RUBEL MIAH
                         .Miah-profession Lead WordPress Developer  
                    .about-us-Mia
-                        img(src="../img/Mia.png", width:263px; height:250px; alt="")
-                        .Mia-name Shamim Mia
+                        .Mia-foto
+                            .about-us-icons
+                                .about-icon-facebook
+                                .about-icon-twitter
+                                .about-icon-google
+                                .about-icon-linkedin
+                        .Mia-name SHAMIM MIA
                         .Mia-profession Sr. Web Developer 
                    .about-us-Doe
-                        img(src="../img/Doe.png", width:263px; height:250px; alt="")
-                        .Doe-name John Doe
+                        .Doe-foto
+                            .about-us-icons
+                                .about-icon-facebook                                   
+                                .about-icon-twitter
+                                .about-icon-google
+                                .about-icon-linkedin
+                            .Doe-angle-right
+                                 img(src="../img/fa-angle-right.png", alt="") 
+                        .Doe-name JOHN DOE
                         .Doe-profession Front-end Developer
         section.latest-works
             .latest-works-container
@@ -167,7 +184,10 @@ html(lang="en")
                                 .work-place-data-month OCT
                             .work-place-data-content
                                 .work-place-data-tagline STARTUP IDEAS NEEDS TO BE FUNDED 
-                                .work-place-data-signature By Khalil Uddin in Development
+                                .work-place-data-signature By 
+                                    span.red Khalil 
+                                    span Uddin in 
+                                    span.red Development
                         .work-place-text-block
                             .work-place-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam 
                             .work-place-link READ MORE
@@ -230,18 +250,20 @@ html(lang="en")
                     .inputs-section
                         .inputs-block
                             .section1
-                                input(type="text" id="name")
+                                input.finish(type="text" id="name" placeholder="NAME")
                             .section2
-                                input(type="text" id="e-mail")
+                                input.finish(type="text" id="e-mail" placeholder="YOUR E-MAIL")
                             .section3
-                                input(type="text" id="subject")
+                                input.finish(type="text" id="subject" placeholder="YOUR SUBJECT")
                             .section4
-                                input(type="text" id="company-name")
+                                input.finish(type="text" id="company-name" placeholder="COMPANY NAME")
                             .section5
-                                input(type="text" id="message")
+                                input(type="text" id="message" placeholder="WRITE YOUR MESSAGE")
                         .inputs-button
                             .button
-                            .button-text
+                                input.finish(type="text" id="messagebutton" placeholder="SEND MESSAGE")
+                            .button-text * 
+                                span.grey We’ll contact you as as possible. We don’t reply on Monday.
         section.footer
             .footer-container
                 .footer-layout

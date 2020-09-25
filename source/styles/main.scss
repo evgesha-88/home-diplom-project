@@ -2,6 +2,14 @@
 box-sizing: border-box;  
 }
 
+@font-face {
+  font-family: RobotoSlab; src: url("../fonts/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat; src: url("../fonts/Montserrat-Regular.ttf");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,15 +31,20 @@ body {
 .welcome-menu {
   width: 1141px;
   display: flex;
+  padding-top: 40px;
+  align-items: flex-end;
+
 }
 
 .welcome-startup {
   color:#ffffff;
-  font-size:32px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  font-family: Montserrat;
   display: flex;
-  padding-right: 510px;
-  padding-top: 40px;
-  padding-left:229px;
+  padding-right: 370px;
+  padding-left:150px;
 }
 
 .welcome-submenu {
@@ -39,8 +52,10 @@ body {
   width: 540px;
   justify-content: space-between;
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 14px;
-  padding-top:30px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .welcome-general-block {
@@ -53,25 +68,36 @@ body {
 }
 
 .welcome-title {
+  font-family: Montserrat;
   font-size: 48px;
+  font-weight: 400;
   padding-bottom: 24px;
+
 }
 
 .welcome-text {
+  font-family: RobotoSlab;
   font-size: 20px;
+  font-weight: 400px;
   padding-bottom: 50px;
 }
 
 .welcome-button {
   height:50px;
   width:180px;
+  display: flex;
   border:2px solid #ffffff;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome-button-text {
+  color: #ffffff;
+  font-family: Montserrat;
   font-size: 16px;
-  color:#ffffff;
-  margin:(19px 34px 18px 35px);
+  font-weight: 400;
+  line-height: 24px;
+  margin:(19px 30px 18px 30px);
 }
 
 .service-project {
@@ -95,7 +121,10 @@ body {
 
 .service-title {
   color: #555555;
+  font-family: Montserrat;
   font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .service-line {
@@ -106,13 +135,15 @@ body {
 
 .service-text {
   color: #555555;
-  font-size: 16px; 
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .service-icons {
   display: flex;
   justify-content: space-between;
-
 }
 
 .service-icons-circle {
@@ -140,14 +171,20 @@ body {
 }
 
 .service-icons-circle-title {
-  color:#555555;
+  color: #555555;
+  font-family: Montserrat;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 24px;
 }
 
 .service-icons-circle-text {
-  color:#555555;
+  color: #555555;
+  font-family: Roboto Slab;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
   text-align:center;
 }
 
@@ -177,14 +214,20 @@ body {
 
 
 .service-icons-arrows-title {
-  color:#555555;
+  color: #555555;
+  font-family: Montserrat;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 24px;
 }
 
 .service-icons-arrows-text {
-  color:#555555;
+  color: #555555;
+  font-family: Roboto Slab;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -201,14 +244,20 @@ body {
 }
 
 .service-icons-ring-title {
-  color:#555555;
+  color: #555555;
+  font-family: Montserrat;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 24px;
 }
 
 .service-icons-ring-text {
-  color:#555555;
+  color: #555555;
+  font-family: Roboto Slab;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -233,7 +282,10 @@ body {
 
 .about-us-title {
   color: #555555;
+  font-family: Montserrat;
   font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .about-us-line {
@@ -244,14 +296,19 @@ body {
 
 .about-us-text {
   color: #555555;
+  font-family: Roboto Slab;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .about-us-content {
   display: flex;
   flex-direction: row;
   color: #555555;
+  font-family: Roboto Slab;
   font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   padding-bottom: 71px;
 }
@@ -269,8 +326,8 @@ body {
 
 .about-us-Uddin {
   text-align: center;
-  font-size: 14px;
-  color: #555555; 
+  color: #555555;
+  font-weight: 400;
   padding-right: 29px;
 }
 
@@ -283,14 +340,15 @@ body {
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  margin-bottom: 20px;
 }
 
-.Uddin-foto:hover .Uddin-icons {
+.Uddin-foto:hover .about-us-icons {
   box-shadow: inset 0 0 0 1000px rgba($color: #555555, $alpha: 0.5);
   opacity:1;
 }
 
-.Uddin-icons {
+.about-us-icons {
   display: flex;
   width:100%;
   height: 100%;
@@ -301,29 +359,52 @@ body {
   position: relative;
 }
 
-
-.Uddin-icons-facebook {
+.about-icon-facebook {
   background-image: url("../img/Facebook_Logo.png");
-  width: 9px;
-  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28px;
+  height: 28px;
 }
 
-.Uddin-icons-twitter {
+.about-icon-facebook:hover {
+  background-color: #c0301c;
+}
+
+.about-icon-twitter {
   background-image: url("../img/Twitter_Logo.png");
-  width: 17px;
-  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28px;
+  height: 28px;
 }
 
-.Uddin-icons-google {
+.about-icon-twitter:hover {
+  background-color: #c0301c;
+}
+
+.about-icon-google {
   background-image: url("../img/Google_Plus_Logo.png");
-  width: 17px;
-  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28px;
+  height: 28px;
 }
 
-.Uddin-icons-linkedin {
+.about-icon-google:hover {
+  background-color: #c0301c;
+}
+
+.about-icon-linkedin {
   background-image: url("../img/fa-linkedin.png");
-  width: 14px;
-  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+}
+
+.about-icon-linkedin:hover {
+  background-color: #c0301c;
 }
 
 .Uddin-angle-left {
@@ -340,43 +421,133 @@ body {
 }
 
 .Uddin-name {
-  padding-top: 20px;
+  font-family: Montserrat;
+  font-size:14px;
   padding-bottom: 15px;
+}
+
+.Uddin-profession {
+  font-size: 13px;
+  font-family: RobotoSlab;
 }
 
 .about-us-Miah {
   text-align: center;
-  font-size: 14px;
   color: #555555;
+  font-weight: 400;
+  line-height: 24px;
   padding-right: 29px;
 }
 
+.Miah-foto {
+  background-image: url("../img/Miah.png");
+  width: 263px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Miah-foto:hover .about-us-icons {
+  box-shadow: inset 0 0 0 1000px rgba($color: #555555, $alpha: 0.5);
+  opacity:1;
+}
+
 .Miah-name {
-  padding-top: 20px;
+  font-size: 14px;
+  font-family: Montserrat;
   padding-bottom: 15px;
+}
+
+.Miah-profession {
+  font-size: 13px;
+  font-family: RobotoSlab;
 }
 
 .about-us-Mia {
   text-align: center;
-  font-size: 14px;
   color: #555555;
+  font-weight: 400;
+  line-height: 24px;
   padding-right: 29px; 
 }
 
+.Mia-foto {
+  background-image: url("../img/Mia.png");
+  width: 263px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Mia-foto:hover .about-us-icons {
+  box-shadow: inset 0 0 0 1000px rgba($color: #555555, $alpha: 0.5);
+  opacity:1;
+}
+
 .Mia-name {
+  font-size: 14px;
+  font-family: Montserrat;
   padding-top: 20px;
   padding-bottom: 15px;
+}
+
+.Mia-profession {
+  font-size: 13px;
+  font-family: RobotoSlab;
 }
 
 .about-us-Doe {
   text-align: center;
-  font-size: 14px;
   color: #555555;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Doe-foto {
+  background-image: url("../img/Doe.png");
+  width: 263px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Doe-foto:hover .about-us-icons {
+  box-shadow: inset 0 0 0 1000px rgba($color: #555555, $alpha: 0.5);
+  opacity:1;
+}
+
+.Doe-angle-right {
+  background-color: #c0301c;
+  width: 35px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 106px;
 }
 
 .Doe-name {
+  font-size: 14px;
+  font-family: Montserrat;
   padding-top: 20px;
   padding-bottom: 15px;
+}
+
+.Doe-profession {
+  font-size: 13px;
+  font-family: RobotoSlab;
 }
 
 .latest-works {
@@ -399,8 +570,11 @@ body {
 }
 
 .latest-works-title {
-  font-size: 20px;
   color: #555555;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .latest-works-line {
@@ -417,12 +591,18 @@ body {
 }
 
 .latest-works-item {
-  font-size: 16px;
   color: #555555;
+  font-family: Roboto Slab;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .latest-works-item1 {
+  font-family: Roboto Slab;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   color: #c0301c;
 }
 
@@ -458,13 +638,19 @@ body {
 
 .hair-dresser-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
 .foto-branding {
   color: #ffffff;
+  font-family: Roboto Slab;
   font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 25px;
 }
 
@@ -472,12 +658,18 @@ body {
   background-color: #ffffff;
   width: 100px;
   height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding:(15px 29px 15px 30px);
 }
 
 .button-text {
   color: #c0301c;
+  font-family: "Roboto Slab";
   font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .foto-hair-dresser:hover .hair-dresser-content {
@@ -505,7 +697,10 @@ body {
 
 .dove-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
@@ -534,7 +729,10 @@ body {
 
 .laptop-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
@@ -563,7 +761,10 @@ body {
 
 .camera-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
@@ -592,7 +793,10 @@ body {
 
 .bicycle-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
@@ -621,7 +825,10 @@ body {
 
 .notebook-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
@@ -650,7 +857,10 @@ body {
 
 .desktop-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
@@ -679,7 +889,10 @@ body {
 
 .stationary-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
@@ -708,7 +921,10 @@ body {
 
 .guide-title {
   color: #ffffff;
+  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
   padding-bottom: 16px;
 }
 
@@ -740,14 +956,19 @@ body {
 
 .action-question {
   color: #ffffff;
+  font-family: Roboto Slab;
   font-size: 30px;
-  padding-bottom: 24px;
+  font-weight: 400;
+  line-height: 44px;
   text-align: center;
 }
 
 .action-answer {
   color: #ffffff;
+  font-family: Roboto Slab;
   font-size: 30px;
+  font-weight: 400;
+  line-height: 44px;
   padding-bottom: 53px;
   text-align: center;
 }
@@ -771,7 +992,10 @@ body {
   width: 180px;
   height: 50px;
   color: #ffffff;
+  font-family: Roboto Slab;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 44px;
 }
 
 .action-button-text:hover {
@@ -804,7 +1028,10 @@ body {
 
 .blog-posts-title {
   color: #555555;
+  font-family: Montserrat;
   font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .blog-posts-line {
@@ -815,7 +1042,10 @@ body {
 
 .blog-posts-text {
   color: #555555;
+  font-family: Roboto Slab;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .work-place-layout {
@@ -861,6 +1091,7 @@ body {
 
 .work-place-data-month {
   color: #777777;
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -876,6 +1107,7 @@ body {
 
 .work-place-data-tagline {
   color: #c0301c;
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400px;
   line-height: 24px;
@@ -883,10 +1115,16 @@ body {
 }
 
 .work-place-data-signature {
-  color: #c0301c;
+  color: #777777;
+  font-family: RobotoSlab;
+  font-style: italic;
   font-size: 13px;
   font-weight: 400px;
   line-height: 24px;
+}
+
+.red {
+ color: #c0301c;
 }
 
 .work-place-text-block {
@@ -898,6 +1136,7 @@ body {
 
 .work-place-text {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -906,6 +1145,7 @@ body {
 
 .work-place-link {
   color: #c0301c;
+  font-family: RobotoSlab;
   font-size: 13px;
   font-weight: 700;
   line-height: 24px;
@@ -952,6 +1192,7 @@ body {
 
 .office-supplies-data-number {
   color: #777777;
+  font-family: Montserrat;
   font-size: 24px;
   font-weight: 700;
   line-height: 20px;
@@ -960,6 +1201,7 @@ body {
 
 .office-supplies-data-month {
   color: #777777;
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -975,6 +1217,7 @@ body {
 
 .office-supplies-data-tagline {
   color: #555555;
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400px;
   line-height: 24px;
@@ -983,6 +1226,8 @@ body {
 
 .office-supplies-data-signature {
   color: #777777;
+  font-family: RobotoSlab;
+  font-style: italic;
   font-size: 13px;
   font-weight: 400px;
   line-height: 24px;
@@ -997,6 +1242,7 @@ body {
 
 .office-supplies-text {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -1005,6 +1251,7 @@ body {
 
 .office-supplies-link {
   color: #777777;
+  font-family: RobotoSlab;
   font-size: 13px;
   font-weight: 700;
   line-height: 24px;
@@ -1075,6 +1322,8 @@ body {
 
 .clients-logo-text {
   color: #555555;
+  font-family: RobotoSlab;
+  font-style: italic;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -1084,6 +1333,7 @@ body {
 
 .clients-logo-signature {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -1128,6 +1378,7 @@ body {
 
 .inputs-title {
   color: #555555;
+  font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -1143,6 +1394,7 @@ body {
 
 .inputs-text {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1183,6 +1435,7 @@ body {
 
 .adress-title {
   color: #555555;
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -1191,6 +1444,7 @@ body {
 
 .adress-line1 {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -1199,6 +1453,7 @@ body {
 
 .adress-line2 {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -1226,6 +1481,7 @@ body {
 
 .phone-title {
   color: #555555;
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -1234,6 +1490,7 @@ body {
 
 .phone-line1 {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -1242,6 +1499,7 @@ body {
 
 .phone-line2 {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -1268,6 +1526,7 @@ body {
 
 .mail-title {
   color: #555555;
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -1276,6 +1535,7 @@ body {
 
 .mail-line1 {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -1284,6 +1544,7 @@ body {
 
 .mail-line2 {
   color: #555555;
+  font-family: RobotoSlab;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
@@ -1300,6 +1561,7 @@ body {
   grid-template-rows: 44px 44px 44px 44px;
   grid-row-gap: 20px;
   grid-column-gap:20px;
+  padding-bottom: 20px;
 }
 
 .section1 {
@@ -1335,7 +1597,7 @@ body {
 
 #subject {
   width: 350px;
-  height: 44px; 
+  height: 44px;
 }
 
 .section4 {
@@ -1360,6 +1622,42 @@ body {
 #message {
   width: 720px;
   height: 108px;
+}
+
+.finish {
+  padding-left: 10px;
+}
+
+.inputs-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button {
+  padding-right: 30px;
+}
+
+#messagebutton {
+  width: 170px;
+  height: 44px;
+  border: 1px solid #555555;
+}
+
+::placeholder {
+  padding-right: 30px;
+}
+
+.button-text {
+  color: #c0301c;
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.grey {
+  color: #555555;
 }
 
 .footer {
@@ -1394,6 +1692,7 @@ body {
 
 .footer-signature {
   color: #ffffff;
+  font-family: RobotoSlab;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
