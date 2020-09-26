@@ -10,6 +10,12 @@ box-sizing: border-box;
   font-family: Montserrat; src: url("../fonts/Montserrat-Regular.ttf");
 }
 
+a {
+  color:#ffffff;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,7 +38,7 @@ body {
   width: 1141px;
   display: flex;
   padding-top: 40px;
-  align-items: flex-end;
+  align-items: flex-start;
 
 }
 
@@ -50,7 +56,7 @@ body {
 .welcome-submenu {
   display: flex;
   width: 540px;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 14px;
@@ -70,7 +76,7 @@ body {
 .welcome-title {
   font-family: Montserrat;
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 700;
   padding-bottom: 24px;
 
 }
@@ -80,6 +86,15 @@ body {
   font-size: 20px;
   font-weight: 400px;
   padding-bottom: 50px;
+}
+
+.getstarted {
+  outline: none;
+  height: 50px;
+  width: 180px;
+  border: 2px solid #ffffff;
+  background-color: rgba($color: #ffffff, $alpha: 0)
+  
 }
 
 .welcome-button {
@@ -97,12 +112,21 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin:(19px 30px 18px 30px);
+}
+
+.getstarted:focus .welcome-button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center  ;
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #c0301c;
 }
 
 .service-project {
   background-color: #ffffff;
- padding:(99px 0 100px 0);
+  padding:(99px 0 100px 0);
 }
 
 .service-project-container {
@@ -123,7 +147,7 @@ body {
   color: #555555;
   font-family: Montserrat;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
 }
 
@@ -284,7 +308,7 @@ body {
   color: #555555;
   font-family: Montserrat;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
 }
 
@@ -573,7 +597,7 @@ body {
   color: #555555;
   font-family: Montserrat;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
 }
 
@@ -998,9 +1022,6 @@ body {
   line-height: 44px;
 }
 
-.action-button-text:hover {
-  color: #c0301c;
-}
 
 .action-button:hover .action-button-text{
   background-color:#ffffff;
@@ -1030,7 +1051,7 @@ body {
   color: #555555;
   font-family: Montserrat;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
 }
 
@@ -1380,7 +1401,7 @@ body {
   color: #555555;
   font-family: Montserrat;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
   padding-bottom: 29px;
 }
@@ -1625,7 +1646,34 @@ body {
 }
 
 .finish {
+  outline: none;
   padding-left: 10px;
+  color: #555555;
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid #555555;
+}
+
+.writemessage {
+  outline: none;
+  padding-left: 10px;
+  padding-bottom: 50px;
+  color: #555555;
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid #555555;
+}
+
+.writemessage:focus {
+  border: 1px solid #c0301c;
+}
+
+.finish:focus {
+  border: 1px solid #c0301c;
 }
 
 .inputs-button {
@@ -1634,18 +1682,20 @@ body {
   align-items: center;
 }
 
-.button {
+/*.button {
   padding-right: 30px;
-}
+}*/
 
-#messagebutton {
+.sendmessage {
+  outline: none;
   width: 170px;
   height: 44px;
   border: 1px solid #555555;
-}
-
-::placeholder {
-  padding-right: 30px;
+  color: #555555;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .button-text {
