@@ -35,10 +35,11 @@ body {
 }
 
 .welcome-menu {
-  width: 1141px;
+  width: auto;
   display: flex;
   padding-top: 40px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-around;
 
 }
 
@@ -49,8 +50,6 @@ body {
   line-height: 36px;
   font-family: Montserrat;
   display: flex;
-  padding-right: 370px;
-  padding-left:150px;
 }
 
 .welcome-submenu {
@@ -93,8 +92,22 @@ body {
   height: 50px;
   width: 180px;
   border: 2px solid #ffffff;
-  background-color: rgba($color: #ffffff, $alpha: 0)
-  
+  background-color: rgba($color: #ffffff, $alpha: 0);
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.getstarted:hover  {
+  background-color: #ffffff;
+  color: #c0301c;
 }
 
 .welcome-button {
@@ -106,23 +119,7 @@ body {
   align-items: center;
 }
 
-.welcome-button-text {
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
 
-.getstarted:focus .welcome-button-text {
-  display: flex;
-  justify-content: center;
-  align-items: center  ;
-  width: 180px;
-  height: 50px;
-  background-color: #ffffff;
-  color: #c0301c;
-}
 
 .service-project {
   background-color: #ffffff;
@@ -345,7 +342,8 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-between;;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about-us-Uddin {
@@ -632,11 +630,16 @@ body {
 
 .latest-foto-block {
   display: grid;
-  grid-template-columns: 360px 360px 360px;
-  grid-template-rows: 320px 320px 320px;
+  height: auto;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 320px;
   grid-row-gap: 30px;
   grid-column-gap:30px;
 }
+
+
+
 
 .foto-hair-dresser {
   display: flex;
@@ -644,10 +647,10 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("../img/hair-dresser.png");
-  grid-column-start: 1; 
-  grid-column-end: 2; 
-  grid-row-start: 1; 
-  grid-row-end: 2; 
+  // grid-column-start: 1; 
+  // grid-column-end: 2; 
+  // grid-row-start: 1; 
+  // grid-row-end: 2; 
 }
 
 .hair-dresser-content {
@@ -685,12 +688,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:(15px 29px 15px 30px);
 }
 
-.button-text {
+.foto-button-text {
   color: #c0301c;
-  font-family: "Roboto Slab";
+  font-family: Roboto Slab;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -703,10 +705,10 @@ body {
 
 .foto-dove {
   background-image: url("../img/dove.png");
-  grid-column-start: 2; 
-  grid-column-end: 3; 
-  grid-row-start: 1; 
-  grid-row-end: 2; 
+  // grid-column-start: 2; 
+  // grid-column-end: 3; 
+  // grid-row-start: 1; 
+  // grid-row-end: 2; 
 }
 
 .dove-content {
@@ -735,10 +737,10 @@ body {
 
 .foto-laptop {
   background-image: url("../img/laptop.png");
-  grid-column-start: 3; 
-  grid-column-end: 4; 
-  grid-row-start: 1; 
-  grid-row-end: 2; 
+  // grid-column-start: 3; 
+  // grid-column-end: 4; 
+  // grid-row-start: 1; 
+  // grid-row-end: 2; 
 }
 
 .laptop-content {
@@ -767,10 +769,10 @@ body {
 
 .foto-camera {
   background-image: url("../img/camera.png");
-  grid-column-start: 1; 
-  grid-column-end: 2; 
-  grid-row-start: 2; 
-  grid-row-end: 3; 
+  // grid-column-start: 1; 
+  // grid-column-end: 2; 
+  // grid-row-start: 2; 
+  // grid-row-end: 3; 
 }
 
 .camera-content {
@@ -799,10 +801,10 @@ body {
 
 .foto-bicycle {
   background-image: url("../img/bicycle.png");
-  grid-column-start: 2; 
-  grid-column-end: 3; 
-  grid-row-start: 2; 
-  grid-row-end: 3; 
+  // grid-column-start: 2; 
+  // grid-column-end: 3; 
+  // grid-row-start: 2; 
+  // grid-row-end: 3; 
 }
 
 .bicycle-content {
@@ -831,10 +833,10 @@ body {
 
 .foto-notebook {
   background-image: url("../img/notebook.png");
-  grid-column-start: 3; 
-  grid-column-end: 4; 
-  grid-row-start: 2; 
-  grid-row-end: 3; 
+  // grid-column-start: 3; 
+  // grid-column-end: 4; 
+  // grid-row-start: 2; 
+  // grid-row-end: 3; 
 }
 
 .notebook-content {
@@ -863,10 +865,10 @@ body {
 
 .foto-desktop {
   background-image: url("../img/desktop.png");
-  grid-column-start: 1; 
-  grid-column-end: 2; 
-  grid-row-start: 3; 
-  grid-row-end: 4; 
+  // grid-column-start: 1; 
+  // grid-column-end: 2; 
+  // grid-row-start: 3; 
+  // grid-row-end: 4; 
 }
 
 .desktop-content {
@@ -895,10 +897,10 @@ body {
 
 .foto-stationary {
   background-image: url("../img/stationary.png");
-  grid-column-start: 2; 
-  grid-column-end: 3; 
-  grid-row-start: 3; 
-  grid-row-end: 4; 
+  // grid-column-start: 2; 
+  // grid-column-end: 3; 
+  // grid-row-start: 3; 
+  // grid-row-end: 4; 
 }
 
 .stationary-content {
@@ -927,10 +929,10 @@ body {
 
 .foto-guide {
   background-image: url("../img/guide.png");
-  grid-column-start: 3; 
-  grid-column-end: 4; 
-  grid-row-start: 3; 
-  grid-row-end: 4; 
+  // grid-column-start: 3; 
+  // grid-column-end: 4; 
+  // grid-row-start: 3; 
+  // grid-row-end: 4; 
 }
 
 .guide-content {
@@ -1173,7 +1175,7 @@ body {
 }
 
 .blog-posts-straight {
-  width: 1140px;
+  width: 100%;
   height: 1px;
   background-color: #dddddd;
   margin-bottom: 38px;
@@ -1297,7 +1299,8 @@ body {
 
 .clients-logo-block {
   display: flex;
-  width: 898px;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 84px;
@@ -1578,7 +1581,7 @@ body {
 
 .inputs-block {
   display: grid;
-  grid-template-columns: 350px 350px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 44px 44px 44px 44px;
   grid-row-gap: 20px;
   grid-column-gap:20px;
@@ -1593,7 +1596,7 @@ body {
 }
 
 #name {
-  width: 350px;
+  width: 100%;
   height: 44px;
 }
 
@@ -1605,7 +1608,7 @@ body {
 }
 
 #e-mail {
-  width: 350px;
+  width: 100%;
   height: 44px; 
 }
 
@@ -1617,7 +1620,7 @@ body {
 }
 
 #subject {
-  width: 350px;
+  width: 100%;
   height: 44px;
 }
 
@@ -1629,7 +1632,7 @@ body {
 }
 
 #company-name {
-  width: 350px;
+  width: 100%;
   height: 44px; 
 }
 
@@ -1641,7 +1644,7 @@ body {
 }
 
 #message {
-  width: 720px;
+  width: 100%;
   height: 108px;
 }
 
@@ -1704,6 +1707,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
+  padding-left: 30px;
 }
 
 .grey {
@@ -1774,16 +1778,21 @@ body {
   background-position: center;
 }
 
+@media (max-width: 1000px) {
 
+}
+@media (max-width: 1000px) {
+  .latest-foto-block {
+    grid-template-columns: 1fr  1fr;
+  }
 
+  .ite2 {
 
+  }
+}
 
-
-
-
-
-
-
-
-
-
+@media (max-width: 600px) {
+  .latest-foto-block {
+    grid-template-columns: 1fr;
+  }
+}
