@@ -11,17 +11,26 @@ html(lang="en")
                 .welcome-menu
                     .welcome-startup Startup
                     .welcome-submenu
-                        .welcome-submenu.text1 home
-                        .welcome-submenu.text2 services
-                        .welcome-submenu.text3 about
-                        .welcome-submenu.text4 blog
-                        .welcome-submenu.text5 clients
-                        .welcome-submenu.text6 contant
+                        .welcome-submenu.text1 Home
+                        .welcome-submenu.text2 
+                            a(href="#servies") Services
+                        .welcome-submenu.text3 
+                            a(href="#about") About 
+                        .welcome-submenu.text4 
+                            a(href="#works") Works                               
+                        .welcome-submenu.text5 
+                            a(href="#blog") Blog
+                        .welcome-submenu.text6 
+                            a(href="#clients") Clients
+                        .welcome-submenu.text7 
+                            a(href="#contact") Contant
                 .welcome-general-block
-                    .welcome-title Welcome to Startup
+                    .welcome-title WELCOME TO STARTUP
                     .welcome-text Your Favoirite Agency Template
-                    .welcome-button
-                        .welcome-button-text GET STARTED
+                    .weicome-button
+                        button.getstarted 
+                            .welcome-button-text GET STARTED                            
+    a(name="servies")    
         section.service-project
             .service-project-container
                 .service-project-content
@@ -30,20 +39,24 @@ html(lang="en")
                     .service-text We offer dolor sit amet, consetetur sadipscing elitr amet                       
                 .service-icons
                     .service-icons-circle
-                        img(src="../img/circle.png", alt="").circle-class
-                        img(src="../img/fa-font.png", alt="").later-class
+                        .service-circle-picture
+                            .circle-picture
+                                img(src="../img/fa-font.png", alt="").later-class
                         .service-icons-circle-title CLEAN TYPOGRAPHY
                         .service-icons-circle-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
                     .service-icons-arrows                        
-                        img(src="../img/white-circle.png", alt="")
-                        img(src="../img/fa-code.png", alt="")
+                        .service-arrows-picture
+                            .white-circle-picture
+                                img(src="../img/fa-code.png", alt="").arrows-class
                         .service-icons-arrows-title ROCK SOLID CODE
                         .service-icons-arrows-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.   
                     .service-icons-ring
-                        img(src="../img/white-circle.png", alt="")
-                        img(src="../img/fa-support.png", alt="")
+                        .service-ring-picture
+                            .white-circle-picture
+                                img(src="../img/fa-support.png", alt="").ring-class
                         .service-icons-ring-title EXPERT SUPPORT
                         .service-icons-ring-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
+    a(name="about")    
         section.about-us
             .about-us-container
                 .about-us-block
@@ -56,42 +69,233 @@ html(lang="en")
                 .about-us-gallery
                    .about-us-Uddin 
                         .Uddin-foto
-                            .Uddin-foto-icons
+                            .Uddin-angle-left
+                                img(src="../img/fa-angle-left.png", alt="") 
+                            .about-us-icons
+                                .about-icon-facebook
+                                .about-icon-twitter
+                                .about-icon-google
+                                .about-icon-linkedin
                         .Uddin-name MD. KHALIL UDDIN
                         .Uddin-profession Head of Idea                                          
                    .about-us-Miah
-                        img(src="../img/Miah.png", width:263px; height:250px; alt="")
+                        .Miah-foto
+                            .about-us-icons
+                                .about-icon-facebook
+                                .about-icon-twitter
+                                .about-icon-google
+                                .about-icon-linkedin
                         .Miah-name RUBEL MIAH
                         .Miah-profession Lead WordPress Developer  
                    .about-us-Mia
-                        img(src="../img/Mia.png", width:263px; height:250px; alt="")
-                        .Mia-name Shamim Mia
+                        .Mia-foto
+                            .about-us-icons
+                                .about-icon-facebook
+                                .about-icon-twitter
+                                .about-icon-google
+                                .about-icon-linkedin
+                        .Mia-name SHAMIM MIA
                         .Mia-profession Sr. Web Developer 
                    .about-us-Doe
-                        img(src="../img/Doe.png", width:263px; height:250px; alt="")
-                        .Doe-name John Doe
+                        .Doe-foto
+                            .about-us-icons
+                                .about-icon-facebook                                   
+                                .about-icon-twitter
+                                .about-icon-google
+                                .about-icon-linkedin
+                            .Doe-angle-right
+                                 img(src="../img/fa-angle-right.png", alt="") 
+                        .Doe-name JOHN DOE
                         .Doe-profession Front-end Developer
+    a(name="works")
         section.latest-works
             .latest-works-container
                 .latest-works-menu
                     .latest-works-title LATEST WORKS
                     .latest-works-line
                     .latest-works-submenu
-                        .latest-works-item All
+                        .latest-works-item1 All
                         .latest-works-item Branding
                         .latest-works-item Design
                         .latest-works-item Development
                         .latest-works-item Strategy
                 .latest-foto-block
                     .foto-hair-dresser
+                        .hair-dresser-content
+                            .hair-dresser-title Hair Dresser
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
                     .foto-dove
+                        .dove-content
+                            .dove-title Dove
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
                     .foto-laptop
+                        .laptop-content
+                            .laptop-title Laptop
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
                     .foto-camera
+                        .camera-content
+                            .camera-title Camera
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
                     .foto-bicycle
+                        .bicycle-content
+                            .bicycle-title Bicycle
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
                     .foto-notebook
+                        .notebook-content
+                            .notebook-title Notebook
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
                     .foto-desktop
+                        .desktop-content
+                            .desktop-title Desktop
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
                     .foto-stationary
+                        .stationary-content
+                            .stationary-title Stationary
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
                     .foto-guide
+                        .guide-content
+                            .guide-title Guide
+                            .foto-branding Branding
+                            .foto-button
+                                .button-text VIEW
+        section.action
+            .action-container
+                .action-question Do you like OUR WORK so far?
+                .action-answer Let's talk about YOUR PROJECT!
+                .action-button
+                    .action-button-text GET IN TOUCH
+    a(name="blog")
+        section.blog-posts
+            .blog-posts-container
+                .blog-posts-menu
+                    .blog-posts-title RECENT BLOG POSTS
+                    .blog-posts-line
+                    .blog-posts-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                .work-place-layout
+                    .work-place-picture
+                    .work-place-content
+                        .work-place-data-block
+                            .work-place-data-icons
+                                .work-place-data-number 18
+                                .work-place-data-month OCT
+                            .work-place-data-content
+                                .work-place-data-tagline STARTUP IDEAS NEEDS TO BE FUNDED 
+                                .work-place-data-signature By 
+                                    span.red Khalil 
+                                    span Uddin in 
+                                    span.red Development
+                        .work-place-text-block
+                            .work-place-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam 
+                            .work-place-link READ MORE
+                .blog-posts-straight
+                .office-supplies-layout
+                    .office-supplies-picture
+                    .office-supplies-content
+                        .office-supplies-data-block
+                            .office-supplies-data-icons
+                                .office-supplies-data-number 18
+                                .office-supplies-data-month OCT
+                            .office-supplies-data-content
+                                .office-supplies-data-tagline USER INTERFACE DESIGNING ELEMENTS  
+                                .office-supplies-data-signature By Khalil Uddin in Development
+                        .office-supplies-text-block
+                            .office-supplies-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam 
+                            .office-supplies-link READ MORE
+    a(name="clients")    
+        section.clients-logo
+            .clients-logo-container 
+                .clients-logo-layout
+                    .clients-logo-block
+                        .logo-deorham
+                        .logo-ratings
+                        .logo-malik
+                        .logo-bcause
+                        .logo-womgify
+                    .clients-logo-content
+                        .clients-logo-text Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                        .clients-logo-signature John Doe, Google Inc.
+                        .clients-logo-items
+                            .logo-circle
+                            .logo-circle
+                            .logo-circle
+    a(name="contact")
+        section.inputs
+            .inputs-container
+                .inputs-menu
+                    .inputs-title GET IN TOUCH
+                    .inputs-line
+                    .inputs-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+                .inputs-layout
+                    .inputs-location
+                        .adress-block
+                            .adress-icon
+                            .adress-content
+                                .adress-title ADDRESS
+                                .adress-line1 312, 7th Ave, New York 
+                                .adress-line2 NY 101200, United States of America                                                      
+                        .phone-block
+                            .phone-icon
+                            .phone-content
+                                .phone-title HOTLINE (24x7)
+                                .phone-line1 +65 0052 300, +65 88251 210
+                                .phone-line2 +88 01723 511 340
+                        .mail-block
+                            .mail-icon
+                            .mail-content
+                                .mail-title E-MAIL
+                                .mail-line1 shapedtheme@gmail.com
+                                .mail-line2 khalilkode@gmail.com
+                    .inputs-section
+                        .inputs-block
+                            .section1
+                                input.finish(type="text" id="name" placeholder="NAME")
+                            .section2
+                                input.finish(type="text" id="e-mail" placeholder="YOUR E-MAIL")
+                            .section3
+                                input.finish(type="text" id="subject" placeholder="YOUR SUBJECT")
+                            .section4
+                                input.finish(type="text" id="company-name" placeholder="COMPANY NAME")
+                            .section5
+                                input.writemessage(type="text" id="message" placeholder="WRITE YOUR MESSAGE")
+                        .inputs-button
+                            .button
+                                button.sendmessage SEND MESSAGE
+                            .button-text * 
+                                span.grey We’ll contact you as as possible. We don’t reply on Monday.
+        section.footer
+            .footer-container
+                .footer-layout
+                    .footer-twitter-icons
+                        .twitter-icons-background
+                            .twitter-icons
+                        .twitter-icons-background
+                            .twitter-icons
+                        .twitter-icons-background
+                            .twitter-icons
+                        .twitter-icons-background
+                            .twitter-icons
+                    .footer-line
+                    .footer-signature © 2015 STARTUP, DESIGNED BY SHAPEDTHEME
+
+                
+
+                               
                     
 
 
