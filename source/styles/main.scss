@@ -146,6 +146,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  text-align: center;
 }
 
 .service-line {
@@ -160,17 +161,18 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
 }
 
 .service-icons {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .service-icons-circle {
   display: flex;
   flex-direction: column;
-  height: 217px;
   align-items: center;
   justify-content: center;
   padding-right: 45px;
@@ -198,6 +200,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   padding-bottom: 24px;
+  text-align: center;
 }
 
 .service-icons-circle-text {
@@ -212,7 +215,6 @@ body {
 .service-icons-arrows {
   display: flex;
   flex-direction: column;
-  height: 217px;
   align-items: center;
   justify-content: center;
   padding-right: 45px;
@@ -241,6 +243,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   padding-bottom: 24px;
+  text-align: center;
 }
 
 .service-icons-arrows-text {
@@ -255,7 +258,6 @@ body {
 .service-icons-ring {
   display: flex;
   flex-direction: column;
-  height: 217px;
   align-items: center;
   justify-content: center;
 }
@@ -271,6 +273,7 @@ body {
   font-weight: 400;
   line-height: 24px;
   padding-bottom: 24px;
+  text-align: center;
 }
 
 .service-icons-ring-text {
@@ -321,6 +324,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
 }
 
 .about-us-content {
