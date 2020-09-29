@@ -49,7 +49,6 @@ body {
   font-weight: 700;
   line-height: 36px;
   font-family: Montserrat;
-  display: flex;
 }
 
 .welcome-submenu {
@@ -70,6 +69,7 @@ body {
   align-items: center;
   color: #ffffff;
   padding-top: 264px;
+  text-align: center;
 }
 
 .welcome-title {
@@ -166,16 +166,16 @@ body {
 
 .service-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 .service-icons-circle {
   display: flex;
+  width: 30%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 45px;
 }
 
 .service-circle-picture {
@@ -214,10 +214,10 @@ body {
 
 .service-icons-arrows {
   display: flex;
+  width: 30%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 45px;
 }
 
 .service-arrows-picture {
@@ -257,6 +257,7 @@ body {
 
 .service-icons-ring {
   display: flex;
+  width: 30%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -330,6 +331,7 @@ body {
 .about-us-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   color: #555555;
   font-family: Roboto Slab;
   font-size: 14px;
@@ -339,7 +341,11 @@ body {
 }
 
 .about-us-content-text1 {
-  padding-right: 32px;
+  width: 47%;
+}
+
+.about-us-content-text2 {
+  width: 47%;
 }
 
 .about-us-gallery {
@@ -461,7 +467,6 @@ body {
   text-align: center;
   color: #555555;
   font-weight: 400;
-  line-height: 24px;
   padding-right: 29px;
 }
 
@@ -496,7 +501,6 @@ body {
   text-align: center;
   color: #555555;
   font-weight: 400;
-  line-height: 24px;
   padding-right: 29px; 
 }
 
@@ -519,7 +523,6 @@ body {
 .Mia-name {
   font-size: 14px;
   font-family: Montserrat;
-  padding-top: 20px;
   padding-bottom: 15px;
 }
 
@@ -532,7 +535,6 @@ body {
   text-align: center;
   color: #555555;
   font-weight: 400;
-  line-height: 24px;
 }
 
 .Doe-foto {
@@ -567,7 +569,6 @@ body {
 .Doe-name {
   font-size: 14px;
   font-family: Montserrat;
-  padding-top: 20px;
   padding-bottom: 15px;
 }
 
@@ -1767,5 +1768,42 @@ body {
 @media (max-width: 600px) {
   .latest-foto-block {
     grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .service-icons {
+    flex-direction: column;
+  }
+
+  .service-icons-circle {
+    padding-bottom: 30px;
+    width: 80%;
+  }
+
+  .service-icons-arrows {
+    padding-bottom: 30px;
+    width: 80%;
+  }
+
+  .service-icons-ring {
+    width: 80%;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-content-text1 {
+    width: 85%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .about-us-content-text2 {
+    width: 85%;
+    text-align: center;
   }
 }
