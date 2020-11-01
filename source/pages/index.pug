@@ -4,11 +4,35 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="styles/main.css")
+        link(rel="stylesheet", href="styles/media.css")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
         title home-diplom-project
     body
+
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js", integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI", crossorigin="anonymous")
+
         section.welcome-project
-            .welcome-container
-                .welcome-menu
+            .container
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">Startup</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Services</a>
+                            <a class="nav-item nav-link" href="#">About</a>
+                            <a class="nav-item nav-link" href="#">Works</a>
+                            <a class="nav-item nav-link" href="#">Blog</a>
+                            <a class="nav-item nav-link" href="#">Clients</a>
+                            <a class="nav-item nav-link" href="#">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+                //-.welcome-menu
                     .welcome-startup Startup
                     .welcome-submenu
                         .welcome-submenu.text1 Home
@@ -29,9 +53,9 @@ html(lang="en")
                     .welcome-text Your Favoirite Agency Template
                     .weicome-button
                         button.getstarted GET STARTED                       
-    a(name="servies")    
-        section.service-project
-            .service-project-container
+        
+        section(name="servies").service-project
+            .container
                 .service-project-content
                     .service-title SERVICES
                     .service-line 
@@ -55,9 +79,9 @@ html(lang="en")
                                 img(src="../img/fa-support.png", alt="").ring-class
                         .service-icons-ring-title EXPERT SUPPORT
                         .service-icons-ring-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.
-    a(name="about")    
-        section.about-us
-            .about-us-container
+       
+        section(name="about").about-us
+            .container
                 .about-us-block
                     .about-us-title ABOUT US
                     .about-us-line
@@ -106,9 +130,9 @@ html(lang="en")
                                  img(src="../img/fa-angle-right.png", alt="") 
                         .Doe-name JOHN DOE
                         .Doe-profession Front-end Developer
-    a(name="works")
-        section.latest-works
-            .latest-works-container
+    
+        section(name="works").latest-works
+            .container
                 .latest-works-menu
                     .latest-works-title LATEST WORKS
                     .latest-works-line
@@ -179,9 +203,9 @@ html(lang="en")
                 .action-answer Let's talk about YOUR PROJECT!
                 .action-button
                     .action-button-text GET IN TOUCH
-    a(name="blog")
-        section.blog-posts
-            .blog-posts-container
+    
+        section(name="blog").blog-posts
+            .container
                 .blog-posts-menu
                     .blog-posts-title RECENT BLOG POSTS
                     .blog-posts-line
@@ -216,9 +240,9 @@ html(lang="en")
                         .office-supplies-text-block
                             .office-supplies-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore et dolore aliquyam 
                             .office-supplies-link READ MORE
-    a(name="clients")    
-        section.clients-logo
-            .clients-logo-container 
+       
+        section(name="clients").clients-logo
+            .container 
                 .clients-logo-layout
                     .clients-logo-block
                         .logo-deorham
@@ -233,9 +257,9 @@ html(lang="en")
                             .logo-circle
                             .logo-circle
                             .logo-circle
-    a(name="contact")
-        section.inputs
-            .inputs-container
+    
+        section(name="contact").inputs
+            .container
                 .inputs-menu
                     .inputs-title GET IN TOUCH
                     .inputs-line
@@ -278,7 +302,7 @@ html(lang="en")
                             .button-text * 
                                 span.grey We’ll contact you as as possible. We don’t reply on Monday.
         section.footer
-            .footer-container
+            .container
                 .footer-layout
                     .footer-twitter-icons
                         .twitter-icons-background
