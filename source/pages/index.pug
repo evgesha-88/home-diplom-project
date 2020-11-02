@@ -15,23 +15,21 @@ html(lang="en")
 
         section.welcome-project
             .container
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#">Startup</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">Services</a>
-                            <a class="nav-item nav-link" href="#">About</a>
-                            <a class="nav-item nav-link" href="#">Works</a>
-                            <a class="nav-item nav-link" href="#">Blog</a>
-                            <a class="nav-item nav-link" href="#">Clients</a>
-                            <a class="nav-item nav-link" href="#">Contact</a>
-                        </div>
-                    </div>
-                </nav>
+                nav.navbar.navbar-expand-lg.navbar-light
+                    a.navbar-brand(href='#') Startup
+                    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+                        span.navbar-toggler-icon
+                    #navbarNavAltMarkup.collapse.navbar-collapse
+                        .navbar-nav
+                            a.nav-item.nav-link.active(href='#')
+                                | Home 
+                                span.sr-only (current)
+                            a.nav-item.nav-link(href='#') Services
+                            a.nav-item.nav-link(href='#') About
+                            a.nav-item.nav-link(href='#') Works
+                            a.nav-item.nav-link(href='#') Blog
+                            a.nav-item.nav-link(href='#') Clients
+                            a.nav-item.nav-link(href='#') Contact
                 //-.welcome-menu
                     .welcome-startup Startup
                     .welcome-submenu
@@ -88,9 +86,144 @@ html(lang="en")
                     .about-us-text Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
                 .about-us-content
                     .about-us-content-text1 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.
-                    .about-us-content-text2 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et.  
-                .about-us-gallery
-                   .about-us-Uddin 
+                    .about-us-content-text2 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirtempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos eaccusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Loreipsum dolor sit amet. Lorem ipsum dolor et. 
+                #carouselExampleIndicators.carousel.slide(data-ride='carousel')                    
+                    .carousel-inner
+                        .carousel-item.active
+                            .about-us-gallery
+                                .about-us-Uddin 
+                                    .Uddin-foto
+                                        //-.Uddin-angle-left
+                                            img(src="../img/fa-angle-left.png", alt="") 
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Uddin-name MD. KHALIL UDDIN
+                                    .Uddin-profession Head of Idea                                          
+                                .about-us-Miah
+                                    .Miah-foto
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Miah-name RUBEL MIAH
+                                    .Miah-profession Lead WordPress Developer  
+                                .about-us-Mia
+                                    .Mia-foto
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Mia-name SHAMIM MIA
+                                    .Mia-profession Sr. Web Developer 
+                                .about-us-Doe
+                                    .Doe-foto
+                                        .about-us-icons
+                                            .about-icon-facebook                                   
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                        //-.Doe-angle-right
+                                            img(src="../img/fa-angle-right.png", alt="") 
+                                    .Doe-name JOHN DOE
+                                    .Doe-profession Front-end Developer
+                        .carousel-item
+                            .about-us-gallery
+                                .about-us-Uddin 
+                                    .Uddin-foto
+                                        //-.Uddin-angle-left
+                                            img(src="../img/fa-angle-left.png", alt="") 
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Uddin-name MD. KHALIL UDDIN
+                                    .Uddin-profession Head of Idea                                          
+                                .about-us-Miah
+                                    .Miah-foto
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Miah-name RUBEL MIAH
+                                    .Miah-profession Lead WordPress Developer  
+                                .about-us-Mia
+                                    .Mia-foto
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Mia-name SHAMIM MIA
+                                    .Mia-profession Sr. Web Developer 
+                                .about-us-Doe
+                                    .Doe-foto
+                                        .about-us-icons
+                                            .about-icon-facebook                                   
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                        //-.Doe-angle-right
+                                            img(src="../img/fa-angle-right.png", alt="") 
+                                    .Doe-name JOHN DOE
+                                    .Doe-profession Front-end Developer
+                        .carousel-item
+                            .about-us-gallery
+                                .about-us-Uddin 
+                                    .Uddin-foto
+                                        //-.Uddin-angle-left
+                                            img(src="../img/fa-angle-left.png", alt="") 
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Uddin-name MD. KHALIL UDDIN
+                                    .Uddin-profession Head of Idea                                          
+                                .about-us-Miah
+                                    .Miah-foto
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Miah-name RUBEL MIAH
+                                    .Miah-profession Lead WordPress Developer  
+                                .about-us-Mia
+                                    .Mia-foto
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Mia-name SHAMIM MIA
+                                    .Mia-profession Sr. Web Developer 
+                                .about-us-Doe
+                                    .Doe-foto
+                                        .about-us-icons
+                                            .about-icon-facebook                                   
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                        //-.Doe-angle-right
+                                            img(src="../img/fa-angle-right.png", alt="") 
+                                    .Doe-name JOHN DOE
+                                    .Doe-profession Front-end Developer                                    
+                    a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+                        span.carousel-control-prev-icon(aria-hidden='true')
+                        span.sr-only Previous
+                    a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+                        span.carousel-control-next-icon(aria-hidden='true')
+                        span.sr-only Next
+
+                //-.about-us-gallery
+                    .about-us-Uddin 
                         .Uddin-foto
                             .Uddin-angle-left
                                 img(src="../img/fa-angle-left.png", alt="") 
@@ -101,7 +234,7 @@ html(lang="en")
                                 .about-icon-linkedin
                         .Uddin-name MD. KHALIL UDDIN
                         .Uddin-profession Head of Idea                                          
-                   .about-us-Miah
+                    .about-us-Miah
                         .Miah-foto
                             .about-us-icons
                                 .about-icon-facebook
@@ -110,7 +243,7 @@ html(lang="en")
                                 .about-icon-linkedin
                         .Miah-name RUBEL MIAH
                         .Miah-profession Lead WordPress Developer  
-                   .about-us-Mia
+                    .about-us-Mia
                         .Mia-foto
                             .about-us-icons
                                 .about-icon-facebook
@@ -119,7 +252,7 @@ html(lang="en")
                                 .about-icon-linkedin
                         .Mia-name SHAMIM MIA
                         .Mia-profession Sr. Web Developer 
-                   .about-us-Doe
+                    .about-us-Doe
                         .Doe-foto
                             .about-us-icons
                                 .about-icon-facebook                                   
@@ -203,7 +336,7 @@ html(lang="en")
                 .action-answer Let's talk about YOUR PROJECT!
                 .action-button
                     .action-button-text GET IN TOUCH
-    
+        
         section(name="blog").blog-posts
             .container
                 .blog-posts-menu
