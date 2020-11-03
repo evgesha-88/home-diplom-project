@@ -22,7 +22,7 @@ body {
 }
 
 section {
-  max-width: 1920px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -32,12 +32,38 @@ section {
   height: 986px;  
   background-size: cover;
 
+  .navbar.navbar-expand-lg.navbar-light {
+    padding-top: 20px;
+  }
+
+  .navbar-light .navbar-brand {
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    font-family: "Montserrat";
+  }
+
   .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 30px;
 
     &.active {
       color: #ffffff;
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-right: 30px;
     }
+  }
+
+  .navbar-light .navbar-nav .nav-link:last-child {
+    padding-right: 0;
   }
 
   .navbar-expand-lg .navbar-collapse {
@@ -50,22 +76,9 @@ section {
 }
 
 .container {
-  width:85%;
+  max-width:1140px;
   margin:0 auto;
 }
-
-.navbar {
-  padding-top: 20px;
-}
-
-.navbar-nav {
-  color: #ffffff;
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
 
 .welcome-menu {
   width: auto;
@@ -334,7 +347,15 @@ section {
     background-color: #555555;
     opacity: 0.2; 
     margin-top: 100px; 
-  }  
+  } 
+  
+  .carousel-control-next:hover {
+    background-color: #c0301c;
+  }
+
+  .carousel-control-prev:hover {
+    background-color: #c0301c;
+  }
 }
 
 .about-us-block {
@@ -1448,13 +1469,8 @@ section {
   padding-bottom: 30px;
 }
 
-.adress-icon {
-  width: 12px;
-  height: 17px;
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
-  padding-right: 30px;
-  margin-top: 5px;
+.adress-icon {  
+  padding-right: 20px; 
 }
 
 .adress-content {
@@ -1495,13 +1511,9 @@ section {
   padding-bottom: 30px;
 }
 
-.phone-icon {
-  width: 12px;
-  height: 20px;
-  background-image: url("../img/mobile-phone.png");
-  background-repeat: no-repeat;
-  padding-right: 30px;
-  margin-top: 5px;
+.phone-icon {  
+  padding-right: 20px;
+  margin-top:2px;
 }
 
 .phone-content {
@@ -1541,13 +1553,9 @@ section {
   align-items: flex-start;
 }
 
-.mail-icon {
-  width: 15px;
-  height: 11px;
-  background-image: url("../img/envelope.png");
-  background-repeat: no-repeat;
-  padding-right: 30px;
-  margin-top: 8px;
+.mail-icon {  
+  padding-right: 20px;
+  margin-top: 3px;
 }
 
 .mail-content {
@@ -1796,6 +1804,7 @@ section {
     padding-right: 0;
     padding-bottom: 30px;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -1869,3 +1878,4 @@ section {
     grid-row-end: 3;  
   }
 }
+

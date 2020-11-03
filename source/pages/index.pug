@@ -6,6 +6,7 @@ html(lang="en")
         link(rel="stylesheet", href="styles/main.css")
         link(rel="stylesheet", href="styles/media.css")
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+        script(src="https://kit.fontawesome.com/8df8c2de0d.js" crossorigin="anonymous") 
         title home-diplom-project
     body
 
@@ -92,9 +93,7 @@ html(lang="en")
                         .carousel-item.active
                             .about-us-gallery
                                 .about-us-Uddin 
-                                    .Uddin-foto
-                                        //-.Uddin-angle-left
-                                            img(src="../img/fa-angle-left.png", alt="") 
+                                    .Uddin-foto                                        
                                         .about-us-icons
                                             .about-icon-facebook
                                             .about-icon-twitter
@@ -126,59 +125,22 @@ html(lang="en")
                                             .about-icon-facebook                                   
                                             .about-icon-twitter
                                             .about-icon-google
-                                            .about-icon-linkedin
-                                        //-.Doe-angle-right
-                                            img(src="../img/fa-angle-right.png", alt="") 
+                                            .about-icon-linkedin                                         
                                     .Doe-name JOHN DOE
                                     .Doe-profession Front-end Developer
                         .carousel-item
                             .about-us-gallery
-                                .about-us-Uddin 
-                                    .Uddin-foto
-                                        //-.Uddin-angle-left
-                                            img(src="../img/fa-angle-left.png", alt="") 
-                                        .about-us-icons
-                                            .about-icon-facebook
-                                            .about-icon-twitter
-                                            .about-icon-google
-                                            .about-icon-linkedin
-                                    .Uddin-name MD. KHALIL UDDIN
-                                    .Uddin-profession Head of Idea                                          
-                                .about-us-Miah
-                                    .Miah-foto
-                                        .about-us-icons
-                                            .about-icon-facebook
-                                            .about-icon-twitter
-                                            .about-icon-google
-                                            .about-icon-linkedin
-                                    .Miah-name RUBEL MIAH
-                                    .Miah-profession Lead WordPress Developer  
-                                .about-us-Mia
-                                    .Mia-foto
-                                        .about-us-icons
-                                            .about-icon-facebook
-                                            .about-icon-twitter
-                                            .about-icon-google
-                                            .about-icon-linkedin
-                                    .Mia-name SHAMIM MIA
-                                    .Mia-profession Sr. Web Developer 
                                 .about-us-Doe
                                     .Doe-foto
                                         .about-us-icons
                                             .about-icon-facebook                                   
                                             .about-icon-twitter
                                             .about-icon-google
-                                            .about-icon-linkedin
-                                        //-.Doe-angle-right
-                                            img(src="../img/fa-angle-right.png", alt="") 
+                                            .about-icon-linkedin                                         
                                     .Doe-name JOHN DOE
                                     .Doe-profession Front-end Developer
-                        .carousel-item
-                            .about-us-gallery
                                 .about-us-Uddin 
-                                    .Uddin-foto
-                                        //-.Uddin-angle-left
-                                            img(src="../img/fa-angle-left.png", alt="") 
+                                    .Uddin-foto                                        
                                         .about-us-icons
                                             .about-icon-facebook
                                             .about-icon-twitter
@@ -204,17 +166,46 @@ html(lang="en")
                                             .about-icon-linkedin
                                     .Mia-name SHAMIM MIA
                                     .Mia-profession Sr. Web Developer 
+                                
+                        .carousel-item
+                            .about-us-gallery
+                                .about-us-Mia
+                                    .Mia-foto
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Mia-name SHAMIM MIA
+                                    .Mia-profession Sr. Web Developer  
                                 .about-us-Doe
                                     .Doe-foto
                                         .about-us-icons
                                             .about-icon-facebook                                   
                                             .about-icon-twitter
                                             .about-icon-google
-                                            .about-icon-linkedin
-                                        //-.Doe-angle-right
-                                            img(src="../img/fa-angle-right.png", alt="") 
+                                            .about-icon-linkedin                                        
                                     .Doe-name JOHN DOE
-                                    .Doe-profession Front-end Developer                                    
+                                    .Doe-profession Front-end Developer 
+                                .about-us-Uddin 
+                                    .Uddin-foto                                         
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Uddin-name MD. KHALIL UDDIN
+                                    .Uddin-profession Head of Idea                                          
+                                .about-us-Miah
+                                    .Miah-foto
+                                        .about-us-icons
+                                            .about-icon-facebook
+                                            .about-icon-twitter
+                                            .about-icon-google
+                                            .about-icon-linkedin
+                                    .Miah-name RUBEL MIAH
+                                    .Miah-profession Lead WordPress Developer  
+                                                                                                 
                     a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
                         span.carousel-control-prev-icon(aria-hidden='true')
                         span.sr-only Previous
@@ -401,18 +392,21 @@ html(lang="en")
                     .inputs-location
                         .adress-block
                             .adress-icon
+                                i.fas.fa-map-marker-alt
                             .adress-content
                                 .adress-title ADDRESS
                                 .adress-line1 312, 7th Ave, New York 
                                 .adress-line2 NY 101200, United States of America                                                      
                         .phone-block
                             .phone-icon
+                                i.fas.fa-mobile-alt
                             .phone-content
                                 .phone-title HOTLINE (24x7)
                                 .phone-line1 +65 0052 300, +65 88251 210
                                 .phone-line2 +88 01723 511 340
                         .mail-block
                             .mail-icon
+                                i.far.fa-envelope
                             .mail-content
                                 .mail-title E-MAIL
                                 .mail-line1 shapedtheme@gmail.com
