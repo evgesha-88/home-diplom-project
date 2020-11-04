@@ -62,6 +62,8 @@ section {
     }
   }
 
+  
+
   .navbar-light .navbar-nav .nav-link:last-child {
     padding-right: 0;
   }
@@ -1879,3 +1881,18 @@ section {
   }
 }
 
+@media (max-width: 1200px) { 
+  .hidden {
+    display: none;
+  }
+
+  .about-us-gallery {
+    display: flex;
+    justify-content: center;
+  }
+
+  #carouselExampleIndicators {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
