@@ -62,7 +62,9 @@ section {
     }
   }
 
-  
+  .navbar-toggler {
+    background-color:#ffffff;
+  }
 
   .navbar-light .navbar-nav .nav-link:last-child {
     padding-right: 0;
@@ -433,7 +435,7 @@ section {
   height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/  
   align-items: center;
   position: relative;
   margin-bottom: 20px;
@@ -684,12 +686,9 @@ section {
   line-height: 24px;
 }
 
-.latest-works-item1 {
-  font-family: "Roboto Slab";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+.latest-works-item:hover {
   color: #c0301c;
+  cursor: pointer;
 }
 
 .latest-foto-block {
@@ -1080,11 +1079,11 @@ section {
 
 .blog-posts-menu {
   display: flex;
-  height: 92px;
-  flex-direction: column;
+  height: 90px;
+  flex-direction: column;  
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 69px;
+  margin-bottom: 70px;  
 }
 
 .blog-posts-title {
@@ -1107,6 +1106,7 @@ section {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  text-align: center;
 }
 
 .work-place-layout {
@@ -1164,15 +1164,21 @@ section {
   flex-direction: column;
   height: 76px;
   justify-content: center;
+  max-width: 637px;
 }
 
 .work-place-data-tagline {
-  color: #c0301c;
+  color: #777777;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 400px;
   line-height: 24px;
   padding-bottom: 19px;
+}
+
+.work-place-data-tagline:hover {
+  color: #c0301c;
+  cursor: pointer;
 }
 
 .work-place-data-signature {
@@ -1205,11 +1211,16 @@ section {
 }
 
 .work-place-link {
-  color: #c0301c;
+  color: #555555;
   font-family: "RobotoSlab";
   font-size: 13px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.work-place-link:hover {
+  color: #c0301c;
+  cursor: pointer;
 }
 
 .blog-posts-straight {
@@ -1225,7 +1236,7 @@ section {
 
 .office-supplies-picture {
   background-image:url("../img/office_supplies.png");
-  width: 440px;
+  width: 460px;
   height: 322px;
   margin-right: 41px;
 }
@@ -1285,6 +1296,11 @@ section {
   padding-bottom: 19px;
 }
 
+.office-supplies-data-tagline:hover {
+  color: #c0301c;
+  cursor: pointer;
+}
+
 .office-supplies-data-signature {
   color: #777777;
   font-family: "RobotoSlab";
@@ -1318,6 +1334,11 @@ section {
   line-height: 24px;
 }
 
+.office-supplies-link:hover {
+  color: #c0301c;
+  cursor: pointer;
+}
+
 .clients-logo {
   background-color: #f8f8f8;
   padding:(98px 0 100px 0)
@@ -1334,7 +1355,7 @@ section {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 84px;
 }
@@ -1343,24 +1364,28 @@ section {
   width: 141px;
   height: 27px;
   background-image: url("../img/deorham.png");
+  margin-right: 50px;
 }
 
 .logo-ratings {
   width: 121px;
   height: 49px;
   background-image: url("../img/ratings.png");
+  margin-right: 50px;
 }
 
 .logo-malik {
   width: 142px;
   height: 17px;
   background-image: url("../img/malik_media.png");
+  margin-right: 50px;
 }
 
 .logo-bcause {
   width: 109px;
   height: 21px;
   background-image: url("../img/bcause.png");
+  margin-right: 50px;
 }
 
 .logo-womgify {
@@ -1790,6 +1815,22 @@ section {
   background-position: center;
 }
 
+@media (max-width: 1200px) { 
+  .hidden {
+    display: none;
+  }
+
+  .about-us-gallery {
+    display: flex;
+    justify-content: center;
+  }
+
+  #carouselExampleIndicators {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1024px) {
   .latest-foto-block {
     grid-template-columns: 1fr  1fr;
@@ -1805,7 +1846,7 @@ section {
     justify-content: space-between;    
     padding-right: 0;
     padding-bottom: 30px;
-  }
+  } 
   
 }
 
@@ -1828,7 +1869,17 @@ section {
     width: 80%;
   }
 
-  
+  .work-place-layout, .office-supplies-layout {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .work-place-picture, .office-supplies-picture {    
+    margin: 0 auto; 
+    background-size: 80%;    
+    background-repeat: no-repeat;
+  }   
 }
 
 @media (max-width: 576px) { 
@@ -1841,7 +1892,7 @@ section {
   .about-us-content-text1 {
     width: 85%;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 30px;  
   }
 
   .about-us-content-text2 {
@@ -1854,45 +1905,38 @@ section {
   }
 
   .inputs-location {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;        
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;        
   }
 
-  .adress-block {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;  
+  .carousel {
+    min-width: 300px;
   }
 
-  .phone-block {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  .work-place-picture, .office-supplies-picture {    
+    margin: 0 auto; 
+    background-size: 80%;    
+    background-repeat: no-repeat;
   }  
 
-  .mail-block {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;  
-  }
-}
-
-@media (max-width: 1200px) { 
-  .hidden {
-    display: none;
-  }
-
-  .about-us-gallery {
+  .clients-logo-block {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
   }
-
-  #carouselExampleIndicators {
-    width: 50%;
-    margin: 0 auto;
+  
+  .logo-deorham, .logo-ratings, .logo-malik, .logo-bcause {
+    margin-bottom:30px;
+    background-repeat: no-repeat;
+    margin-right: 0;
   }
 }
+
+@media (max-width: 375px) {
+  .work-place-picture, .office-supplies-picture {    
+    margin: 0 auto; 
+    background-size: 70%;    
+    background-repeat: no-repeat;
+  }  
+}
+
